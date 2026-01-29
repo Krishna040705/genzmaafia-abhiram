@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABHIRAM | Factory-Direct Shopping</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="top-bar">
+            <div class="container top-bar-content">
+                <div class="top-bar-text">
+                    <i class="fas fa-truck"></i> Free shipping on orders over ₹999 | Factory-direct pricing
+                </div>
+                <div class="top-bar-links">
+                    <a href="#"><i class="fas fa-question-circle"></i> Help Center</a>
+                    <a href="#"><i class="fas fa-map-marker-alt"></i> Store Locator</a>
+                    <a href="#"><i class="fas fa-user"></i> Become a Partner</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="main-header">
+            <div class="container header-content">
+                <a href="#" class="logo">GENZ <span>MAAFIA</span></a>
+                
+                <div class="search-bar">
+                    <input type="text" id="searchInput" placeholder="Search for products, brands and more...">
+                    <button id="searchBtn"><i class="fas fa-search"></i></button>
+                </div>
+                
+                <div class="header-actions">
+                    <div class="header-action-item" id="accountBtn">
+                        <i class="fas fa-user"></i>
+                        <span>Account</span>
+                    </div>
+                    <div class="header-action-item" id="wishlistBtn">
+                        <i class="fas fa-heart"></i>
+                        <span>Wishlist</span>
+                    </div>
+                    <div class="header-action-item cart-icon" id="cartBtn">
+                        <i class="fas fa-shopping-bag"></i>
+                        <span>Cart</span>
+                        <div class="cart-count" id="cartCount">3</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <nav>
+            <div class="container">
+                <ul class="nav-links">
+                    <li><a href="#" data-category="men">Men</a></li>
+                    <li><a href="#" data-category="women">Women</a></li>
+                    <li><a href="#" data-category="kids">Kids</a></li>
+                    <li><a href="#" data-category="home">Home & Living</a></li>
+                    <li><a href="#" data-category="electronics">Electronics</a></li>
+                    <li><a href="#" data-category="sports">Sports</a></li>
+                    <li><a href="#" data-category="beauty">Beauty</a></li>
+                    <li><a href="#" class="btn-outline btn promoter-btn" style="padding: 5px 15px; color: white; border-color: white;">Become a Promoter</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Factory-Direct. Customer-First.</h1>
+            <p>ABHIRAM connects you directly with manufacturers, eliminating middlemen to offer products at 40-60% lower prices. Join our promoter network and earn with every purchase!</p>
+            <div class="hero-btns">
+                <a href="#products" class="btn shop-now-btn">Shop Now</a>
+                <a href="#" class="btn btn-outline promoter-btn" style="color: white; border-color: white;">Become a Promoter</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <h2 class="section-title">Why ABHIRAM?</h2>
+            <div class="feature-cards">
+                <div class="feature-card">
+                    <i class="fas fa-industry"></i>
+                    <h3>Direct From Factory</h3>
+                    <p>We source directly from manufacturers, cutting out all middlemen to give you the best prices.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-tags"></i>
+                    <h3>Lowest Prices</h3>
+                    <p>Save 40-60% on all products compared to traditional retail prices.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-bullhorn"></i>
+                    <h3>Earn as Promoter</h3>
+                    <p>Join our promoter network and earn commission on every sale you refer.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-shipping-fast"></i>
+                    <h3>Fast Delivery</h3>
+                    <p>Enjoy quick delivery directly from our partner factories to your doorstep.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products" id="products">
+        <div class="container">
+            <div class="products-header">
+                <h2 class="section-title">Trending Products</h2>
+                <div class="category-filter">
+                    <div class="category-btn active" data-category="all">All</div>
+                    <div class="category-btn" data-category="fashion">Fashion</div>
+                    <div class="category-btn" data-category="electronics">Electronics</div>
+                    <div class="category-btn" data-category="home">Home</div>
+                </div>
+            </div>
+            
+            <div class="product-grid">
+                <!-- Product 1 -->
+                <div class="product-card" data-category="fashion">
+                    <div class="product-img">
+                        <div class="product-badge">Factory Direct</div>
+                        <img src="https://images.unsplash.com/photo-1523381210434-271e8be1f52b?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Men's T-Shirt">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">Fashion • Clothing</div>
+                        <div class="product-title">Premium Cotton T-Shirt</div>
+                        <div class="product-price">
+                            <span class="current-price">₹499</span>
+                            <span class="original-price">₹1299</span>
+                            <span class="discount">62% OFF</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="btn add-to-cart-btn" data-product-id="1">Add to Cart</button>
+                            <button class="btn btn-outline promote-product-btn" data-product-id="1">Promote</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 2 -->
+                <div class="product-card" data-category="electronics">
+                    <div class="product-img">
+                        <div class="product-badge">Factory Direct</div>
+                        <img src="https://images.unsplash.com/photo-1546868871-7041f2a55e12?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Smart Watch">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">Electronics • Wearables</div>
+                        <div class="product-title">Smart Watch Pro</div>
+                        <div class="product-price">
+                            <span class="current-price">₹2,499</span>
+                            <span class="original-price">₹5,999</span>
+                            <span class="discount">58% OFF</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="btn add-to-cart-btn" data-product-id="2">Add to Cart</button>
+                            <button class="btn btn-outline promote-product-btn" data-product-id="2">Promote</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 3 -->
+                <div class="product-card" data-category="home">
+                    <div class="product-img">
+                        <div class="product-badge">Factory Direct</div>
+                        <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Kitchen Set">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">Home • Kitchen</div>
+                        <div class="product-title">Non-Stick Cookware Set</div>
+                        <div class="product-price">
+                            <span class="current-price">₹1,799</span>
+                            <span class="original-price">₹4,200</span>
+                            <span class="discount">57% OFF</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="btn add-to-cart-btn" data-product-id="3">Add to Cart</button>
+                            <button class="btn btn-outline promote-product-btn" data-product-id="3">Promote</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 4 -->
+                <div class="product-card" data-category="fashion">
+                    <div class="product-img">
+                        <div class="product-badge">Factory Direct</div>
+                        <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Women's Dress">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">Fashion • Clothing</div>
+                        <div class="product-title">Elegant Summer Dress</div>
+                        <div class="product-price">
+                            <span class="current-price">₹899</span>
+                            <span class="original-price">₹2,299</span>
+                            <span class="discount">61% OFF</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="btn add-to-cart-btn" data-product-id="4">Add to Cart</button>
+                            <button class="btn btn-outline promote-product-btn" data-product-id="4">Promote</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 5 -->
+                <div class="product-card" data-category="electronics">
+                    <div class="product-img">
+                        <div class="product-badge">Factory Direct</div>
+                        <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Wireless Headphones">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">Electronics • Audio</div>
+                        <div class="product-title">Wireless Bluetooth Headphones</div>
+                        <div class="product-price">
+                            <span class="current-price">₹1,599</span>
+                            <span class="original-price">₹3,999</span>
+                            <span class="discount">60% OFF</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="btn add-to-cart-btn" data-product-id="5">Add to Cart</button>
+                            <button class="btn btn-outline promote-product-btn" data-product-id="5">Promote</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 6 -->
+                <div class="product-card" data-category="home">
+                    <div class="product-img">
+                        <div class="product-badge">Factory Direct</div>
+                        <img src="https://images.unsplash.com/photo-1556228453-efd6c1ff04f6?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Home Decor">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">Home • Decor</div>
+                        <div class="product-title">Modern Wall Art Set</div>
+                        <div class="product-price">
+                            <span class="current-price">₹999</span>
+                            <span class="original-price">₹2,499</span>
+                            <span class="discount">60% OFF</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="btn add-to-cart-btn" data-product-id="6">Add to Cart</button>
+                            <button class="btn btn-outline promote-product-btn" data-product-id="6">Promote</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="how-it-works">
+        <div class="container">
+            <h2 class="section-title">How ABHIRAM Works</h2>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Factory Direct Sourcing</h3>
+                    <p>We partner with verified manufacturers to source products directly, eliminating all intermediaries.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Quality Check & Listing</h3>
+                    <p>Each product undergoes strict quality checks before being listed on our platform at factory prices.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Promoter Network</h3>
+                    <p>Our promoters share products with customers and earn commission on every successful sale.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <h3>Direct Delivery</h3>
+                    <p>Products are shipped directly from factories to customers, ensuring fastest delivery.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h3>ABHIRAM</h3>
+                    <p>Factory-direct ecommerce platform offering products at 40-60% lower prices. Join our promoter network to earn with every sale.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Shop By Category</h3>
+                    <ul class="footer-links">
+                        <li><a href="#" data-category="men">Men's Fashion</a></li>
+                        <li><a href="#" data-category="women">Women's Fashion</a></li>
+                        <li><a href="#" data-category="kids">Kids & Toys</a></li>
+                        <li><a href="#" data-category="home">Home & Kitchen</a></li>
+                        <li><a href="#" data-category="electronics">Electronics</a></li>
+                        <li><a href="#" data-category="beauty">Beauty & Health</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Useful Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#" id="aboutLink">About Us</a></li>
+                        <li><a href="#" class="promoter-btn">Become a Promoter</a></li>
+                        <li><a href="#" id="factoryLink">Factory Partnership</a></li>
+                        <li><a href="#" id="careersLink">Careers</a></li>
+                        <li><a href="#" id="blogLink">Blog</a></li>
+                        <li><a href="#" id="helpLink">Help & Support</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact Us</h3>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Factory Street, Industrial Area, Mumbai</li>
+                        <li><i class="fas fa-phone"></i> +91 98765 43210</li>
+                        <li><i class="fas fa-envelope"></i> support@abhiram.com</li>
+                    </ul>
+                    <div class="newsletter">
+                        <p>Subscribe for updates</p>
+                        <div class="search-bar" style="margin-top: 10px;">
+                            <input type="email" id="newsletterEmail" placeholder="Your email address">
+                            <button id="subscribeBtn"><i class="fas fa-paper-plane"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2023 ABHIRAM. All rights reserved. | Factory-Direct Ecommerce Platform</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cart Modal -->
+    <div class="modal" id="cartModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Your Shopping Cart</h3>
+                <span class="close-modal">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div class="cart-items" id="cartItems">
+                    <!-- Cart items will be dynamically inserted here -->
+                </div>
+                <div class="cart-summary">
+                    <div class="cart-total">
+                        <span>Total:</span>
+                        <span id="cartTotal">₹0</span>
+                    </div>
+                    <button class="btn checkout-btn">Proceed to Checkout</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Promotion Modal -->
+    <div class="modal" id="promotionModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Promote This Product</h3>
+                <span class="close-modal">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div id="promotionDetails">
+                    <!-- Promotion details will be dynamically inserted here -->
+                </div>
+                <div class="promotion-link">
+                    <p>Your promotion link:</p>
+                    <div class="link-box" id="promotionLink"></div>
+                    <button class="btn copy-link-btn">Copy Link</button>
+                    <div class="share-buttons">
+                        <button class="share-btn facebook"><i class="fab fa-facebook-f"></i> Facebook</button>
+                        <button class="share-btn whatsapp"><i class="fab fa-whatsapp"></i> WhatsApp</button>
+                        <button class="share-btn twitter"><i class="fab fa-twitter"></i> Twitter</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
