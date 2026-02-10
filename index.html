@@ -4,14 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Genz Maafia | Factory-Direct Shopping</title>
+    <link rel="icon" href="logo.png" type="image/png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Header Section -->
+    <div style="width:100%; overflow:hidden; background:#0f1025; color:white; padding:1px 0; font-weight:600;">
+  <marquee id="offerMarquee" behavior="scroll" direction="left" scrollamount="6"
+    onmouseover="this.stop();" onmouseout="this.start();"
+    style="font-size:16px;">
+   Abhiram welcomes you to the launch of Genz Maafia | 🔥 Flat 50% OFF on Fashion |     🚚 Free Delivery on Orders Above ₹999 |    🎁 Become a Promoter & Earn |   ⚡ New Arrivals in Electronics |     Contact ░8░8░8░5░3░8░8░1░6░8░ for Collaborations | Thank you |
+  </marquee>
+</div>
+
+<script>
+  // You can change speed dynamically if you want
+  const m = document.getElementById("offerMarquee");
+  let speed = 6;
+
+  function increaseSpeed() {
+    speed = 10;
+    m.setAttribute("scrollamount", speed);
+  }
+
+  function normalSpeed() {
+    speed = 6;
+    m.setAttribute("scrollamount", speed);
+  }
+
+  // Example: speed up on hover of whole page
+  document.body.addEventListener("mouseenter", increaseSpeed);
+  document.body.addEventListener("mouseleave", normalSpeed);
+</script>
+
+   
     <header>
-        <div class="top-bar">
+        <!-- <div class="top-bar">
             <div class="container top-bar-content">
                 <!-- Replace the existing top-bar-text div with this: -->
 
@@ -21,7 +50,10 @@
         
         <div class="main-header">
             <div class="container header-content">
-                <a href="#" class="logo">GENZ <span>MAAFIA</span></a>
+                <a href="index.html" class="logo">
+  <img src="logo.png" alt="GENZ MAAFIA Logo" style="height:60px; vertical-align:middle;">
+  GENZ <span>MAAFIA</span>
+</a>
                 
                 <div class="search-bar">
                     <input type="text" id="searchInput" placeholder="Search for products, brands and more...">
@@ -315,17 +347,17 @@
                 <div class="footer-col">
                     <h3>Contact Us</h3>
                     <ul class="footer-links">
-                        <li><i class="fas fa-map-marker-alt"></i> 123 Factory Street, Industrial Area, Mumbai</li>
+                        <li><i class="fas fa-map-marker-alt"></i>   Ballari,Karnataka</li>
                         <li><i class="fas fa-phone"></i> +91 98765 43210</li>
                         <li><i class="fas fa-envelope"></i> support@Genz Maafia.com</li>
                     </ul>
-                    <div class="newsletter">
+                    <!-- <div class="newsletter">
                         <p>Subscribe for updates</p>
                         <div class="search-bar" style="margin-top: 10px;">
                             <input type="email" id="newsletterEmail" placeholder="Your email address">
                             <button id="subscribeBtn"><i class="fas fa-paper-plane"></i></button>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
             
